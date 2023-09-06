@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> gride-assigment.1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        body{
+            display:grid; 
+            grid-template-areas:
+            "header header  header"
+            "nav article aside"
+            "nav footer footer";
+            grid-template-rows: 20% 60% 20%;
+            grid-template-columns: 20% 60% 20%;
+            height:100vh;
+            grid-gap:5px;
+            /* text-align: left; */
+            /* overflow: hidden; */
+        }
+         header,nav,footer,article,aside
+         {
+            background-color: rgb(127, 73, 236);
+         }
+         #pageHeader{
+            grid-area:header;
+         }
+         #pageNav{
+            grid-area: nav;
+         }
+         #pageArtical{
+            grid-area: article;
+         }
+         #pageAds{
+            grid-area: aside;
+         }
+         #pageFooter{
+            grid-area: footer;
+         }
+
+
+    </style>
+    <body>
+          <header id="pageHeader">Header</header>
+          <nav id="pageNav">Nav</nav>
+          <article id="pageArtical">Artical</article>
+          <aside id="pageAds">Ads</aside>
+          <footer id="pageFooter">footer</footer>
+    </body>
+</head>
+</html>
